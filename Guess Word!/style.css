@@ -1,0 +1,18 @@
+.c_guess {
+    line-height: 25px;
+}
+
+
+/* .c_message {
+    width: 300px;
+    height: 100px;
+    background-color: aquamarine;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 25px;
+    text-align: center;
+} */
+
+.hidden {
+    display: none;
+}

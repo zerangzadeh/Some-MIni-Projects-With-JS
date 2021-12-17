@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .display {
+        width: 400px;
+        height: 50px;
+        margin: 20px;
+        padding: 20px;
+        text-align: center;
+        background-color: darkorange;
+        color: rgb(3, 15, 15);
+        font-size: 25px;
+        border: darkviolet 1px soild;
+        box-shadow: 1px 1px 1px;
+    }
+</style>
+
+<body>
+    <section class="reverseTimer">
+        <input type="date" name="" id="endTime" onchange="setTime()">
+
+        <div id="remainTime" class="display"></div>
+
+    </section>
+
+    <script>
+        var x
+        var TimerStop = false;
+        var endTime;
+        // clearInterval(x);
+
+        // function myFunction() {
+        //     myVar = setInterval(alertFunc, 3000);
+        // }
+        // myFunction();
+
+        // function alertFunc() {
+        //     alert("Hello!");
+        // }
+
+        function setTime() {
+            // debugger;
+            endTime = new Date(document.getElementById("endTime").value).getTime();
+            TimerStop = false;
+            // 
+            // startTimer(endTime);
+            clearInterval(x);
+            x = setInterval(startTime, 1000);
+
+
+
+        }
+
+        function startTime() {
+            if (!TimerStop) {
+                var now = new Date().getTime();
+                var distance = endTime - now;
+                // debugger;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var mins = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var secs = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("remainTime").innerHTML = days + " days : " + hours + " hours : " + mins + " mins : " + secs + " secs ";
+            }
+            if (distance < 0) {
+                TimerStop = true;
+                clearInterval(x);
+                document.getElementById("remainTime").innerHTML = "finish";
+            }
+
+        }
+
+
+
+        // function calcTime() {
+        //     debugger;
+
+        //     var currentTime = new Date();
+
+        //     console.log(endTime.getTime - currentTime.getTime));
+        // }
+    </script>
+
+</body>
+
+</html>

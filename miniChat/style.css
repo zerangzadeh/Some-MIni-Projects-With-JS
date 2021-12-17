@@ -1,0 +1,47 @@
+.sendBtn {
+    background-color: #c7a5a5;
+    border-radius: 10px;
+    border-bottom: 1px solid sienna;
+    width: 10%;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 22px;
+    color: rgb(24, 4, 4);
+    text-align: center;
+    border: 1px solid rgb(43, 8, 8);
+}
+
+.chatBox {
+    width: 50%;
+    height: 500px;
+    overflow: auto;
+    background-color: #fcd9d9;
+    text-align: left;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.msgText {
+    width: calc(40% - 10px);
+    margin-top: 10px;
+    background-color: #eeb8d3;
+    margin-right: 10px;
+    line-height: 30px;
+    border-radius: 10px;
+}
+
+body {
+    text-align: center;
+    margin: auto;
+    background-color: #cfaa79;
+}
+
+container {
+    text-align: center;
+    margin-left: 40%;
+    padding-left: 200px;
+}
+
+li {
+    list-style-type: none;
+}

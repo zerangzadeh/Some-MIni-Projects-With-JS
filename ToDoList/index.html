@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TopLearn.Com</title>
+    <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+    <link rel="stylesheet" href="fontawesome/css/all.min.css">
+
+    <link href="https://v1.fontapi.ir/css/Yekan" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+<body dir="rtl">
+    <div class="container">
+        <div class="row">
+            <div class="intro col-12">
+                <br>
+                <br>
+                <h1 class="text text-info"> کارهای روزانه
+
+                </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="helpText col-12 col-md-8 m-auto mb-4">
+                <p id="first" class="text-dark"> کار های خود را داخل ورودی وارد کنید تا به لیست کارها اضافه شود</p>
+                <p id="second" class="text-warning">بعد از انجام هر کار روی آن کلیک کنید</p>
+                <p id="third" class="text-danger">برای حذف آنها روی "X" کلیک کنید.</p>
+                <hr>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12 ">
+                <input id="userInput" class="enterTask " type="text" placeholder="آیتم جدید ..." maxlength="27">
+                <button id="enter"><i class="fa fa-pencil-alt"></i></button>
+            </div>
+        </div>
+
+        <!-- Empty List -->
+        <div class="row">
+            <div class="listItems col-12  col-md-8  m-auto ">
+                <ul id="taskList" class=" col-12 m-auto mt-3">
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+
+</html>

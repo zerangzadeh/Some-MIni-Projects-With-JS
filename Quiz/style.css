@@ -1,0 +1,47 @@
+body {
+    background-color: #053742;
+}
+
+form {
+    text-align: left;
+    margin-left: 80px;
+}
+
+.container {
+    width: 50%;
+    height: 250px;
+    background-color: #A2DBFA;
+    margin-top: 50px;
+    /* align-items: center; */
+    justify-content: center;
+    /* margin: auto; */
+}
+
+.qArea {
+    width: 80%;
+    height: 35%;
+    background-color: #39A2DB;
+    margin: auto;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.btnNext {
+    border: 1px solid navy;
+    background-color: #053742;
+    border-radius: 10px;
+    margin: 20px auto;
+    color: mintcream;
+}
+
+.score {
+    width: 50%;
+    height: 50px;
+    display: none;
+    border: 2px solid white;
+    color: white;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px;
+}

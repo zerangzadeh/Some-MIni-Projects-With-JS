@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="clockstyle.css">
+</head>
+
+<body>
+    <section class="clock-area">
+        <section class="title-area">
+            <h3>STOP WATCH</h3>
+            <p>Vanilla JavaScript stopwatch</p>
+        </section>
+        <section class="time-display">
+            <div>
+                <h3><span id="min">00</span>:<span id="sec">00</span>:<span id="ten">00</span></h3>
+            </div>
+        </section>
+        <section class="btn-area">
+            <div>
+                <button id="str">Start</button>
+                <button id="stp">Stop</button>
+                <button id="rst">Reset</button>
+            </div>
+        </section>
+    </section>
+
+
+    <section>
+        <div class="clock">
+            <h3>
+                <span id="hour1"></span>:
+                <span id="min1"></span>:
+                <span id="sec1"></span>
+                <span id="ap"></span>
+            </h3>
+        </div>
+    </section>
+
+
+
+    <section class="reverseTimer">
+        <input type="date" name="" id="endTime" onchange="calcTime()">
+        <div id="dEndDate"></div>
+        <div id="remainTime"></div>
+
+    </section>
+
+    <script src="clockJs.js"></script>
+</body>
+
+</html>

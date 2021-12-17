@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Yekan', sans-serif;
+    background-color: #233E8B;
+}
+
+
+/* ul {
+    background-color: #FFFFC7;
+} */
+
+h3 {
+    color: #FFFFC7;
+}
+
+input[type="text"] {
+    border-radius: 20px;
+}
+
+.btnClear,
+.btnNewTask {
+    color: #233E8B;
+    background-color: #A9F1DF;
+    border: none;
+    border-radius: 10px;
+}
+
+.title {
+    background-color: #1EAE98;
+    border-radius: 70px;
+    width: 20%;
+    text-align: center;
+    margin-top: 20px;
+}
